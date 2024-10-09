@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>décalcomanie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="maintxt">
+        <p>데칼코마니당</p>
+        <img class="left" src="heart.png">
+        <img src="heart.png">
+        <p class="m2">데칼코마니당</p>
+    </div>
+    <div class="layout">
+        <img src="body.png">
+        <img class="right" src="body.png">
+        <p id="ds">유리판이나 종이 등 물감을 흡수하지 않는 재질의 표면에 물감을 칠하고, 다른 종이 등을 덮어 누르거나 문지르고 떼어내는 미술 기법. 오스카르 도밍게스(Oscar Dominguez, 1906~1958)가 개발하였다. 어원은 프랑스어로 '옮긴다'는 의미를 갖는다.</p>
+        <p id="finish"> Doodle can be Art!</p>
+    </div>
+
+    <div class="canvas-container">
+        <canvas id="canvas" width="400" height="400"></canvas>
+        <div class="button-container">
+            <button id="mirrorBtn">décalcomanie!</button>
+            <button id="saveBtn">save</button>
+            <audio id="decal-sound" src="yeah.mp3"></audio>
+            <div id="brushContainer">
+                <button class="brushBtn" data-brush="normal">normal</button>
+                <button class="brushBtn" data-brush="thick">thick</button>
+                <button class="brushBtn" data-brush="dotted">dash</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-left">
+            <input type="color" id="colorPicker" value="#0412dc">
+    </div>
+    <div id="speechBubble">
+      <p>우와 재밌겠다</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
